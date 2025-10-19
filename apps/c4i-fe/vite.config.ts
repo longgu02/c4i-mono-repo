@@ -1,6 +1,7 @@
 /// <reference types='vitest' />
 import { defineConfig } from 'vite';
 import { reactRouter } from '@react-router/dev/vite';
+import path from 'path';
 
 export default defineConfig(() => ({
   root: __dirname,
@@ -18,6 +19,15 @@ export default defineConfig(() => ({
   // worker: {
   //  plugins: [ nxViteTsPaths() ],
   // },
+  resolve: {
+    alias: {
+      '@c4i-fe/chat': path.resolve(__dirname, '../../chat/src/lib/chat'),
+      '@c4i-fe/milestones': path.resolve(
+        __dirname,
+        '../../milestones/src/lib/milestones'
+      ),
+    },
+  },
   build: {
     outDir: './dist',
     emptyOutDir: true,

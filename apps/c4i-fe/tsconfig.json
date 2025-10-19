@@ -3,6 +3,12 @@
   "include": [],
   "references": [
     {
+      "path": "../../milestones"
+    },
+    {
+      "path": "../../chat"
+    },
+    {
       "path": "./tsconfig.app.json"
     }
   ],

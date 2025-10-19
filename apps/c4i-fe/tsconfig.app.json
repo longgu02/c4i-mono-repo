@@ -36,5 +36,13 @@
     "eslint.config.js",
     "eslint.config.cjs",
     "eslint.config.mjs"
+  ],
+  "references": [
+    {
+      "path": "../../milestones/tsconfig.lib.json"
+    },
+    {
+      "path": "../../chat/tsconfig.lib.json"
+    }
   ]
 }

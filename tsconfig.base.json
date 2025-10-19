@@ -16,6 +16,10 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "es2022",
-    "customConditions": ["@c4i-fe/source"]
+    "customConditions": ["@c4i-fe/source"],
+    "paths": {
+      "@c4i-fe/chat": ["./chat/src/index.ts"],
+      "@c4i-fe/milestones": ["./milestones/src/index.ts"]
+    }
   }
 }
