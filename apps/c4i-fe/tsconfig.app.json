@@ -39,10 +39,16 @@
   ],
   "references": [
     {
+      "path": "../../feature-counter/tsconfig.lib.json"
+    },
+    {
       "path": "../../milestones/tsconfig.lib.json"
     },
     {
       "path": "../../chat/tsconfig.lib.json"
+    },
+    {
+      "path": "../../state/tsconfig.lib.json"
     }
   ]
 }

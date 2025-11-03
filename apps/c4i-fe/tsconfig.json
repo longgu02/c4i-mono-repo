@@ -3,10 +3,16 @@
   "include": [],
   "references": [
     {
+      "path": "../../feature-counter"
+    },
+    {
       "path": "../../milestones"
     },
     {
       "path": "../../chat"
+    },
+    {
+      "path": "../../state"
     },
     {
       "path": "./tsconfig.app.json"

@@ -26,6 +26,15 @@ export default defineConfig(() => ({
         __dirname,
         '../../milestones/src/lib/milestones'
       ),
+      '@c4i-fe/state': path.resolve(__dirname, '../../state/src/index'),
+      '@c4i-fe/shared/store-hooks': path.resolve(
+        __dirname,
+        '../../shared/store-hooks/src/lib/index'
+      ),
+      '@c4i-fe/feature-counter': path.resolve(
+        __dirname,
+        '../../feature-counter/src/index'
+      ),
     },
   },
   build: {

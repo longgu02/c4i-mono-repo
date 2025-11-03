@@ -1,0 +1,7 @@
+// import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
+// import type { RootState, AppDispatch } from '@c4i-fe/state'; // import types only
+
+// export const useAppDispatch: () => AppDispatch = useDispatch;
+// export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;
+
+export * from './lib/store-hook';

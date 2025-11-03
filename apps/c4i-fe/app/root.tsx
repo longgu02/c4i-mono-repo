@@ -9,6 +9,9 @@ import {
 } from 'react-router';
 
 import { AppNav } from './app-nav';
+import { Provider } from 'react-redux';
+import { store } from '@c4i-fe/state';
+import { initSlice } from '@c4i-fe/feature-counter';
 
 export const meta: MetaFunction = () => [
   {
@@ -30,6 +33,8 @@ export const links: LinksFunction = () => [
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
+  initSlice();
+
   return (
     <html lang="en">
       <head>
@@ -39,10 +44,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        <AppNav />
-        {children}
-        <ScrollRestoration />
-        <Scripts />
+        <Provider store={store}>
+          <AppNav />
+          {children}
+          <ScrollRestoration />
+          <Scripts />
+        </Provider>
       </body>
     </html>
   );

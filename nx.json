@@ -13,7 +13,6 @@
     ],
     "sharedGlobals": ["{workspaceRoot}/.gitlab-ci.yml"]
   },
-  "nxCloudId": "68f5031e6e9c423c4cc3e948",
   "plugins": [
     {
       "plugin": "@nx/js/typescript",
@@ -77,6 +76,20 @@
         "linter": "eslint",
         "unitTestRunner": "none"
       }
+    }
+  },
+  "pluginsConfig": {
+    "@nx/js": {
+      "constraints": [
+        {
+          "sourceTag": "type:state",
+          "onlyDependOnLibsWithTags": ["type:feature"]
+        },
+        {
+          "sourceTag": "type:hook",
+          "onlyDependOnLibsWithTags": ["type:state"]
+        }
+      ]
     }
   }
 }
